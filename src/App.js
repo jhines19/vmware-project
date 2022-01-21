@@ -1,6 +1,7 @@
 import React from "react";
 import DataCard from "./components/dataCard";
-import dataObj from './data/dataClusters';
+import dataObj from "./data/dataClusters";
+import ListView from "./components/listView";
 
 
 export default function App() {
@@ -11,4 +12,3 @@ export default function App() {
     </div>
   );
 }
-

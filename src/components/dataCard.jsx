@@ -1,10 +1,13 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+import { useState } from "react";
+
 
 export default function DataCard({ dataObj }) {
 
-
+//map over each value
+console.log(dataObj);
 
   return (
     <div className="container">
@@ -14,7 +17,7 @@ export default function DataCard({ dataObj }) {
               <Card.Title>Name: {`${dataObj.name}`}</Card.Title>
               <Card.Body>
                 <ListGroup variant="flush">
-                  <ListGroup.Item>Size: {`${dataObj.name}`}</ListGroup.Item>
+                  <ListGroup.Item>Size: {`${dataObj.total_memory_gb}`}</ListGroup.Item>
                   <ListGroup.Item>Cores: {`${dataObj.cores}`}</ListGroup.Item>
                   <ListGroup.Item>OS: {`${dataObj.os}`}</ListGroup.Item>
                 </ListGroup>
@@ -52,7 +55,6 @@ export default function DataCard({ dataObj }) {
 //         </>
 //     )
 // }
-
 
 
 
